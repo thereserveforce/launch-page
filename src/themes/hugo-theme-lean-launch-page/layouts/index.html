@@ -18,7 +18,6 @@
 {{ $directory := "themes/hugo-theme-lean-launch-page/static/" }}
 {{ $filename := "favicon.png" }}
 {{ if (where (readDir $directory) "Name" $filename) }}
-	<img class="logo" src="/favicon.png" alt="Logo" />
 {{ end }}
 	<ul class="social-icons">
 		{{ if isset .Site.Params "twitter" }}<li><a href="{{ .Site.Params.twitter }}"><i class="fa fa-twitter"></i></a></li>{{ end }}
@@ -26,9 +25,9 @@
 		{{ if isset .Site.Params "instagram" }}<li><a href="{{ .Site.Params.instagram }}"><i class="fa fa-instagram"></i></a></li>{{ end }}
 		{{ if isset .Site.Params "googleplus" }}<li><a href="{{ .Site.Params.googleplus }}"><i class="fa fa-google-plus"></i></a></li>{{ end }}
 	</ul>
+	<img class="logo" src="/logo.svg" alt="Logo" />
 	{{ block "main" . }}
 	{{ end }}
-	<h1>{{ .Site.Title }}</h1>
 	<p>{{ .Site.Params.tagline }}</p>
 	{{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
 </body>
