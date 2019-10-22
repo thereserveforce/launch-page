@@ -21,26 +21,19 @@ body{
 	font-size: 1.3rem;
 	font-family: "Open Sans";
 }
-	.logo{
-		float: left;
-		width: 50px;
-		height: 50px;
-	}
-
 	ul.social-icons{
-		float: right;
-		margin: 0;
+		margin: 0 0 0 auto;
 		padding: 0;
+		width: 200px;
+		height: 40px;
 	}
+		ul.social-icons li{
+		float: right;
+		}
 
-	h1{
-		margin-top: 10%;
-		margin-bottom: 0;
-		color: #06385d;
-		font-family: "Nunito";
-		font-size: 3.4rem;
-		letter-spacing: 2px;
-		line-height: 1.0;
+	.logo{
+		margin: 10% auto 0 auto;
+		width: 400px;
 	}
 		span.logo{
 			font-family: "Nunito";
